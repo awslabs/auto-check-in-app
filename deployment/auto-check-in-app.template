@@ -373,6 +373,7 @@ Resources:
       FunctionName: !GetAtt IndexFaceLambda.Arn
       Principal: s3.amazonaws.com
       SourceArn: !Sub "arn:aws:s3:::${RegistrationBucketNamePrefix}-${AWS::Region}-${AWS::AccountId}"
+      SourceAccount: !Ref 'AWS::AccountId'
 
   AutoCheckinAppLogGroup:
     Type: AWS::Logs::LogGroup
