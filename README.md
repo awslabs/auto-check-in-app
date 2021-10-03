@@ -35,6 +35,10 @@ To help make it easier for customers to automate the check-in process, Amazon We
 ```
 
 
+This solution collects anonymous operational metrics to help AWS improve the
+quality of features of the solution. For more information, including how to disable
+this capability, please see the [implementation guide](https://docs.aws.amazon.com/solutions/latest/auto-check-in-app/appendix.html).
+
 ## Running unit tests for customization
 * Clone the repository, then make the desired code changes
 * Next, run unit tests to make sure added customization passes the tests
