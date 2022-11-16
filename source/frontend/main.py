@@ -7,8 +7,6 @@ from controller import Controller
 
 def main():
     print('OpenCV version: {}'.format(cv2.__version__))
-    (major, minor, _) = cv2.__version__.split('.')
-    assert major == '4' and minor == '1', 'OpenCV version must be 4.1'
 
     # Parse args
     parser = argparse.ArgumentParser()

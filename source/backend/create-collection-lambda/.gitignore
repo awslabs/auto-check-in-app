@@ -1,0 +1,3 @@
+# Since the build process installs pip packages in this folder, and the Lambda function doesn't use
+# folders, we can just gitignore all subfolders to keep the pip packages out:
+/*/**

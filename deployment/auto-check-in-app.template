@@ -116,7 +116,7 @@ Resources:
         Bucket: !Sub "%%BUCKET_NAME%%-${AWS::Region}"
         Key: %%SOLUTION_NAME%%/%%VERSION%%/index-face-lambda.zip
       Handler: function.lambda_handler
-      Runtime: python3.6
+      Runtime: python3.9
       Role: !GetAtt IndexFaceLambdaExecutionRole.Arn
       Timeout: 10
       Environment:
@@ -174,7 +174,7 @@ Resources:
         Key: %%SOLUTION_NAME%%/%%VERSION%%/create-collection-lambda.zip
       Handler: function.lambda_handler
       Role: !GetAtt CreateCollectionLambdaExecutionRole.Arn
-      Runtime: python3.6
+      Runtime: python3.9
       Timeout: 10
       Environment: 
         Variables: 
@@ -250,7 +250,7 @@ Resources:
         Key: %%SOLUTION_NAME%%/%%VERSION%%/rekognize-face-lambda.zip
       Handler: function.lambda_handler
       Role: !GetAtt RekognizeFaceLambdaExecutionRole.Arn
-      Runtime: python3.6
+      Runtime: python3.9
       Timeout: 10
       Environment:
         Variables:

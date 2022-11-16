@@ -1,0 +1,12 @@
+# Python:
+__pycache__
+
+# Misc:
+.DS_Store
+
+# Configurations:
+env.json
+
+# Build artifacts:
+/deployment/global-s3-assets
+/deployment/regional-s3-assets

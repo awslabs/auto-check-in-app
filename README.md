@@ -6,7 +6,8 @@ Amazon Rekognition is a fully managed service that makes it easy to add deep lea
 To help make it easier for customers to automate the check-in process, Amazon Web Services (AWS)  offers the Auto Check-In App. This solution automatically provisions the products and services necessary to provide facial comparison for event attendee check-in.  
 
 ## Setup
-[Launch the stack](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=auto-check-in-app&templateURL=https://s3.amazonaws.com/solutions-reference/auto-check-in-app/latest/auto-check-in-app.template) and upload images to Amazon S3. 
+[Launch the stack](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=auto-check-in-app&templateURL=https://s3.amazonaws.com/solutions-reference/auto-check-in-app/latest/auto-check-in-app.template) and upload images to Amazon S3.
+
 ### Download and Configure the App
 1.    On the laptop you will use during your event, run the following command in your preferred directory to clone the application source code from GitHub.
 `$ git clone https://github.com/awslabs/auto-check-in-app.git`
@@ -22,8 +23,8 @@ To help make it easier for customers to automate the check-in process, Amazon We
     - Note: You can find the applicable values in the stack Outputs tab.
 
 ### Authenticate Attendees
-1.    To launch the check-in app, run the following command. 
-`$ python main.py`
+1.    To install the dependencies for the check-in app, run: `pip install -r requirements.txt`
+1.    To launch the check-in app, run: `python main.py`
 2.    When prompted, enter your user name and password.
 3.    Use a built-in camera or a USB camera to take a picture of the attendee’s face. While the image is being processed, the status will change from `Stop here` (no face is detected) to `Checking` (the face is detected and being compared to the face collection) to `Welcome` (a face is found with high similarity). 
     - Note: After the status changes to `Welcome`, it will change back to `Checking` for 10 seconds, by default, to avoid recurrent acceptance signals. To change the amount of time, modify the `VisibilityTimeout` parameter in the `env.json` file.
