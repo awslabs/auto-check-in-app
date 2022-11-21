@@ -1,0 +1,3 @@
+boto3>=1.17,<1.27
+opencv-python>=4.1,<4.7
+requests>=2.5,<2.29
