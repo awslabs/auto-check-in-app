@@ -1,3 +1,7 @@
+# Deprecation Notice
+
+This AWS Solution has been archived and is no longer maintained by AWS. To discover other solutions, please visit the [AWS Solutions Library](https://aws.amazon.com/solutions/).
+
 # Auto Check-in App
 Event check-in is the first on-site touchpoint for most events, and the process is your first opportunity to make a good impression with your attendees. An optimized check-in process can help alleviate long lines and attendee confusion, which improves your attendee experience and helps set the tone of your event. 
 One way to optimize the check-in process is to automate it using self-check-in. Self-check-in kiosks and apps can enable attendees to check-in through a name search or QR code scan, print their badges, and enter your event quicker. But, self-check-in requires attendees to enter their name in a search interface, or present a QR code to be scanned which can slow the check-in process.
